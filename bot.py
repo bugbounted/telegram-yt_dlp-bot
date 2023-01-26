@@ -12,7 +12,7 @@ import time
 def help():
     print('Create bot in https://t.me/BotFather and put token to script or with -t argument')
     print('-t <token_string> - puts telegram bot token to script')
-token = '5826150848:AAExme7DVp_3Vg13rmYkY_U8P3_SHrp7ZH4'
+token = '5826150848:AAGjFL717z31dVGZhBm24D-DjVN0VBz4I1s'
 
 argIdx = 1
 while(argIdx < len(sys.argv)):
