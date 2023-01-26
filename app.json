@@ -1,0 +1,11 @@
+{
+    "name": "Mohamad Samardeh",
+    "description": "Telegram bot for download tiktok or youtube videos",
+    "repository": "https://github.com/bugbounted/telegram-yt_dlp-bot",
+    "stack": "Container",
+    "buildpacks": [
+        {   
+            "url": "heroku/python"  
+        }
+      ]
+  }
