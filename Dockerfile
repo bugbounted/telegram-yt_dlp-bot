@@ -1,10 +1,11 @@
-FROM python:3
+FROM python:3.9-slim-bullseye
 
-WORKDIR /usr/src/app
+RUN python3 -m venv /opt/venv
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+# Install dependencies:
+COPY requirements.txt .
+RUN /opt/venv/bin/pip install -r requirements.txt
 
-COPY . .
-
-CMD [ "python", "./bot.py" ]
+# Run the application:
+COPY bot.py .
+CMD ["/opt/venv/bin/python", "bot.py"]
